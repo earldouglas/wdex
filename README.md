@@ -1,3 +1,10 @@
+## About
+
+This project consists of two components:
+
+1. A sandbox to develop [MediaWiki user scripts](https://www.mediawiki.org/wiki/Manual:Interface/JavaScript) locally, without a MediaWiki instance
+2. A sample project that injects a graphical explorer of [Wikidata](https://www.wikidata.org/) data into wiki pages
+
 ## Usage
 
 Fire up a local HTTP server:
