@@ -14,9 +14,9 @@ Fire up a local HTTP server:
 ./server.sh
 ```
 
-Then point your browser to [http://localhost:8080/](http://localhost:8080/):
+Then point your browser to [http://localhost:8080/Richard_Feynman](http://localhost:8080/Richard_Feynman):
 
-![Wikidata Explorer screenshot](https://raw.githubusercontent.com/earldouglas/wikidata-explorer/gh-pages/readme/screenshot.png)
+![Exploring Richard Feynman's linked data](https://raw.githubusercontent.com/earldouglas/wikidata-explorer/gh-pages/readme/screenshot.png)
 
 This simulates looking at the [Wikipedia page for Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman), who has the Wikidata ID [*Q39246*](https://www.wikidata.org/wiki/Q39246).
 
