@@ -2,9 +2,7 @@
 
 This project uses [MediaWiki Shim](https://github.com/earldouglas/mediawiki-shim) and [MediaWiki user scripts](https://www.mediawiki.org/wiki/Manual:Interface/JavaScript) to inject a graphical explorer of [Wikidata](https://www.wikidata.org/) data into wiki pages.
 
-## Examples
-
-* [Richard Feynman](http://earldouglas.github.io/wikidata-explorer/Richard_Feynman/)
+[Demo](http://earldouglas.github.io/wikidata-explorer/Richard_Feynman/)
 
 ## Usage
 
