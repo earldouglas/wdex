@@ -9,7 +9,7 @@ Check out a [working demo](http://earldouglas.github.io/wikidata-explorer/Richar
 Fire up a local HTTP server:
 
 ```bash
-./server.sh
+$ ./server.sh
 ```
 
 Then point your browser to [http://localhost:8080/Richard_Feynman](http://localhost:8080/Richard_Feynman):
