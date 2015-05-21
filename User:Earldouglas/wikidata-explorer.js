@@ -108,11 +108,10 @@
     container.style.height = '36em';
     bodyContent.insertBefore(container, bodyContent.firstChild);
 
-    var nodesMap = {};
-    var edges = [];
+    var nodes = new mw.vis.DataSet();
+    var edges = new mw.vis.DataSet();
 
-    var options = {}; // { stabilize: true };
-    var network = new mw.vis.Network(container, { nodes: [], edges: []}, options);
+    var network = new mw.vis.Network(container, { nodes: nodes, edges: edges }, {});
 
     var panel = document.createElement('div');
     panel.clean = function () {
@@ -142,28 +141,17 @@
       }
     });
 
-    var refresh = function() {
-      var nodes = [];
-      for (var id in nodesMap) {
-        if (nodesMap.hasOwnProperty(id)) {
-          nodes.push({ id: id, label: nodesMap[id] });
-        }
-      }
-      network.setData({ nodes: nodes, edges: edges });
-    };
-
     var rootId = mw.config.get('wgWikibaseItemId');
 
     var addLink = function(fromId, linkLabel, toId, toLabel) {
-      nodesMap[toId] = toLabel;
-      edges.push({ from: fromId, to: toId, label: linkLabel });
-      refresh();
+      nodes.add([ { id: toId, label: toLabel } ]);
+      edges.add([ { from: fromId, to: toId, label: linkLabel } ]);
     };
+
 
     mw.wdGetEntity(rootId).apply(
       function (entity) {
-        nodesMap[rootId] = mw.wdEntityLabel(entity);
-        refresh();
+        nodes.add([ { id: rootId, label: mw.wdEntityLabel(entity) } ]);
       }
     );
   };
