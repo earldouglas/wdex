@@ -1,0 +1,152 @@
+#title {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#query-holder {
+  position: fixed;
+  top: 18px;
+  left: 128px;
+  right: 16px;
+}
+
+#query {
+  border: 1px solid #999;
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#search-results {
+  position: fixed;
+  top: 46px;
+  left: 128px;
+  bottom: 12px;
+  right: 12px;
+  border: 1px solid #999;
+  background: white;
+  display: none;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.scrollable {
+  overflow-y: auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 44px;
+  bottom: 0px;
+}
+
+.search-result {
+  margin: 1em;
+}
+
+.search-result-link {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#metadata {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 64px;
+  left: 70%;
+  bottom: 50%;
+  right: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #999;
+  padding: 1em;
+}
+
+#links {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  bottom: 20%;
+  right: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #999;
+  padding: 1em;
+}
+
+#settings {
+  background-color: white;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  bottom: 12px;
+  right: 12px;
+  border: 1px solid #999;
+  padding: 1em;
+}
+
+.section {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.setting {
+  margin: 0.5em;
+  font-size: 12px;
+}
+
+.setting * {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+ul {
+  margin-top: 0.5em;
+}
+
+.thumbnail {
+  width: 128px;
+  max-width: 100%;
+  border: 2px solid blue;
+}
+
+th.label {
+  text-align: right;
+  vertical-align: top;
+  max-width: 30%;
+}
+
+td {
+  vertical-align: top;
+}
+
+#metadata-loading {
+  display: none;
+}
+
+#links-loading {
+  display: none;
+}
+
+#metadata-table th,
+#metadata-table td {
+  font-size: 12px;
+}
+
+#links-list li {
+  font-size: 12px;
+}

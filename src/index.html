@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Wikidata Explorer</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+
+    <meta name="author" content="James Earl Douglas">
+    <meta name="description" content="Traverse Wikidata as a knowledge graph.">
+    <meta name="bitcoin" content="12Pm6WhxW3CZUQvfooUqJ77K77rvBabQ9g">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="dcterms.date" content="2015-05-18">
+    <meta name="dcterms.subject" content="Linked data">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script type="text/javascript" src="spex.js"></script>
+    <script type="text/javascript" src="wdex.js"></script>
+    <script type="text/javascript" src="ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+  </head>
+  <body onload="wdexInit()">
+
+    <span id="title">WDEx</span>
+
+    <div id="query-holder">
+      <input id="query" type="text" autocomplete="off"
+         placeholder="Search for something" />
+    </div>
+
+    <div id="search-results"></div>
+
+    <div id="metadata">
+      <div class="section">Metadata</div>
+      <div id="metadata-loading">
+        <em>Loading metadata...</em>
+      </div>
+      <div class="scrollable">
+        <table id="metadata-table"></table>
+      </div>
+    </div>
+
+    <div id="links">
+      <div class="section">Links</div>
+      <div id="links-loading">
+        <em>Loading links...</em>
+      </div>
+      <div class="scrollable">
+        <ul id="links-list"></ul>
+      </div>
+    </div>
+
+    <div id="settings">
+      <div class="section">Settings</div>
+      <div class="scrollable">
+        <div class="setting">
+          <input type="checkbox" id="auto-arrange" />
+          <span>auto-arrange</span>
+        </div>
+        <div class="setting">
+          <input type="checkbox" id="hierarchical" />
+          <span>hierarchical</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="graph"></div>
+  </body>
+
+</html>
